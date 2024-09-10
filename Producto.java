@@ -36,19 +36,19 @@ public class Producto {
         this.nombre = nombre;
     }
 
-    public void setPrecio(double precio) {
-        if (precio > 0){
-            this.precio = precio;
-        } else {
+    public void setprecio(double precio) {
+        if (precio <= 0){
             System.out.println("El precio no puede ser cero o negativo");
+        } else {
+            this.precio = precio;
         }
     }
 
     public void setcantidad(int cantidad) {
-        if (cantidad >= 0){
-            this.cantidad = cantidad;
-        } else {
+        if (cantidad < 0){
             System.out.println("La cantidad no puede ser negativa");
+        } else {
+            this.cantidad = cantidad;
         }
         
     }
